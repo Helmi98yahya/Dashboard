@@ -111,6 +111,9 @@ for col in df_all.columns:
 # df_Disp harus memiliki kolom: ["Time", "Sensor_1", "Sensor_2", "Sensor_3", "Sensor_4", "Sensor_5", "Sensor_6", "Sensor_7"]
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+from fastapi import FastAPI
+
+app = FastAPI()
 
 app.layout = dbc.Container([
     # Judul
