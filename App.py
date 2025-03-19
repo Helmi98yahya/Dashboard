@@ -113,7 +113,7 @@ for col in df_all.columns:
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 from fastapi import FastAPI
 
-app = FastAPI()
+server = app.server  # Tambahin ini buat Railway
 
 app.layout = dbc.Container([
     # Judul
