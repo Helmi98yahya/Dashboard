@@ -1,3 +1,8 @@
-fastapi
-uvicorn
 pandas
+openpyxl
+matplotlib
+dash
+dash-bootstrap-components
+dash-table
+plotly
+gunicorn
